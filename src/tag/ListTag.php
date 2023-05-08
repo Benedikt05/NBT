@@ -102,7 +102,7 @@ class ListTag extends NamedTag implements \ArrayAccess, \Countable, \Iterator{
 	 *
 	 * @return CompoundTag|ListTag|mixed
 	 */
-	public function offsetGet($offset){
+	public function offsetGet($offset): mixed{
 		/** @var NamedTag|null $value */
 		$value = $this->value[$offset] ?? null;
 
